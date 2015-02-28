@@ -26,3 +26,6 @@ RUN tar xzvf grafana-1.9.1.tar.gz
 # use custom configuration
 ADD ./grafana.config.js /grafana-1.9.1/config.js
 ADD ./nginx.conf /etc/nginx/nginx.conf
+
+# prebuilt startup script
+ADD ./start.sh /start.sh
