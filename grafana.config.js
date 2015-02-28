@@ -20,7 +20,7 @@ define(['settings'], function(Settings) {
       datasources: {
         grafana: {
           type: 'influxdb',
-          url: "http://localhost:8086/db/grafana",
+          url: "http://localhost:8086/db/walle_monitor",
           username: 'root',
           password: 'root',
           grafanaDB: true
