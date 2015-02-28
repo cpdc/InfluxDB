@@ -29,3 +29,4 @@ ADD ./nginx.conf /etc/nginx/nginx.conf
 
 # prebuilt startup script
 ADD ./start.sh /start.sh
+RUN chmod +x /start.sh
