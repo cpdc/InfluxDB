@@ -20,4 +20,5 @@ RUN yum install -y nginx
 
 # grafana
 RUN wget http://grafanarel.s3.amazonaws.com/grafana-1.9.1.tar.gz
+RUN yum install -y tar
 RUN tar xzvf grafana-1.9.1.tar.gz
