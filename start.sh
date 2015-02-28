@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # current data storage path should have write permission
-if [ ! -d "/influxdb_data"]; then 
+if [ ! -d "/influxdb_data" ]; then 
   mkdir /influxdb_data 
 fi
 
