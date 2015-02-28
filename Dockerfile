@@ -8,5 +8,5 @@ MAINTAINER Qiang He <qiang.he@chinacache.com>
 
 # install InfluxDB 
 RUN wget http://s3.amazonaws.com/influxdb/influxdb-latest-1.x86_64.rpm
-RUN sudo rpm -ivh influxdb-latest-1.x86_64.rpm
+RUN rpm -ivh influxdb-latest-1.x86_64.rpm
 
