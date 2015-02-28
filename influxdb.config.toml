@@ -84,7 +84,7 @@ debug = false
 
 [storage]
 
-dir = "/influxdb_data"
+dir = "/opt/influxdb/shared/data/db"
 # How many requests to potentially buffer in memory. If the buffer gets filled then writes
 # will still be logged and once the local storage has caught up (or compacted) the writes
 # will be replayed from the WAL
