@@ -31,3 +31,5 @@ ADD ./influxdb.config.toml /opt/influxdb/shared/config.toml
 # prebuilt startup script
 ADD ./start.sh /start.sh
 RUN chmod +x /start.sh
+# current data storage path should have write permission
+RUN chmod o+w /influxdb_data/
