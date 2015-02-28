@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # current data storage path should have write permission
-if [ ! -d "/influxdb_data" ]; then 
-  mkdir /influxdb_data 
+if [ ! -d "/opt/influxdb/shared/data" ]; then 
+  mkdir -p /opt/influxdb/shared/data/ 
 fi
 
-chmod o+w /influxdb_data
+chmod o+w /opt/influxdb/shared/data/
 
 /etc/init.d/influxdb start
 /usr/sbin/nginx -c /etc/nginx/nginx.conf
