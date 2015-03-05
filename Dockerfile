@@ -28,10 +28,6 @@ ADD ./grafana.config.js /grafana-1.9.1/config.js
 ADD ./nginx.conf /etc/nginx/nginx.conf
 ADD ./influxdb.config.toml /opt/influxdb/shared/config.toml
 
-# 
-RUN export export LOCAL_IP=`ip addr | grep \"eno1\" | grep \"inet\" | cut -f 1 -d \"/\"|cut -f 6 -d \" \"`
-RUN sed "s/localhost/$LOCAL_IP/g" grafana-1.9.1/config.js
-
 # prebuilt startup script
 ADD ./start.sh /start.sh
 RUN chmod +x /start.sh
